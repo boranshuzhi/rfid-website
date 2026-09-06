@@ -462,19 +462,16 @@ body.edit-mode [contenteditable="true"]:focus{outline-color:var(--c-accent);back
 <div class="contact-form-wrapper reveal reveal-delay-2 visible">
 <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">告诉我们关于你的项目</font></font></h3>
 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">填写下方的表格，我们的团队将在24小时内为您提供量身定制的方案。</font></font></p>
-<div class="contact-form-alt" style="text-align:center;padding:40px 20px;background:linear-gradient(135deg,#060f1f 0%,#0c1e3d 100%);border-radius:12px;">
-  <p style="font-size:18px;color:#8eaad8;margin-bottom:24px;line-height:1.6;">
-    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎通过邮件联系我们，我们将在24小时内回复您的咨询</font></font>
-  </p>
-  <a href="mailto:mars@br-support.com.cn?subject=RFID%E4%BA%A7%E5%93%81%E5%92%A8%E8%AF%A2&amp;body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E5%AF%B9%E8%B4%B5%E5%85%AC%E5%8F%B8%E7%9A%84RFID%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%84%9F%E5%85%B4%E8%B6%A3%EF%BC%8C%E8%AF%B7%E4%B8%8E%E6%88%91%E8%81%94%E7%B3%BB%E3%80%82%0D%0A%0D%0A%E8%81%94%E7%B3%BB%E4%BA%BA%EF%BC%9A%0D%0A%E7%94%B5%E8%AF%9D%EF%BC%9A%0D%0A%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0%EF%BC%9A%0D%0A%E9%9C%80%E6%B1%82%E6%8F%8F%E8%BF%B0%EF%BC%9A"
-     style="display:inline-block;padding:16px 36px;background:linear-gradient(135deg,#1657d9 0%,#00d4b4 100%);color:#fff;border-radius:10px;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 6px 24px rgba(22,87,217,.3);transition:transform .2s;"
-     onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
-    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&#x1F4E7; 发送邮件咨询</font></font>
-  </a>
-  <p style="font-size:14px;color:#7689a8;margin-top:20px;">
-    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或直接发送邮件至：</font></font><a href="mailto:mars@br-support.com.cn" style="color:#00d4b4;">mars@br-support.com.cn</a>
-  </p>
+<form class="contact-form" action="#" method="POST" novalidate="">
+<div class="form-group"><label for="requirement"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目需求描述 </font></font><span class="required"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></span></label><textarea id="requirement" name="requirement" required="" placeholder="请描述您的RFID项目需求，包括应用场景、预期读取范围、标签数量、环境条件等。"></textarea></div>
+<div class="form-row">
+<div class="form-group"><label for="company"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公司名称 </font></font><span class="required"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></span></label><input type="text" id="company" name="company" required="" placeholder="您的公司名称"></div>
+<div class="form-group"><label for="country"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">国家 / 地区 </font></font><span class="required"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></span></label><select id="country" name="country" required=""><option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-- 选择 --</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">澳大利亚</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">奥地利</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">孟加拉国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">比利时</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">巴西</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加拿大</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丹麦</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">芬兰</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">法国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">德国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">香港</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">印度</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">印度尼西亚</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">意大利</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日本</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">马来西亚</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">墨西哥</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">荷兰</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新西兰</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尼日利亚</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">挪威</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">巴基斯坦</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">菲律宾</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">波兰</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">俄罗斯</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">沙特阿拉伯</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新加坡</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">南非</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">韩国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">西班牙</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">瑞典</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">瑞士</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">台湾</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">泰国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">土耳其</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿联酋</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">英国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">美国</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">越南</font></font></option><option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他</font></font></option></select></div>
 </div>
+<div class="form-group"><label for="contact-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的联系信息 </font></font><span class="required"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">*</font></font></span></label><input type="text" id="contact-info" name="contact-info" required="" placeholder="电子邮件地址或电话号码（例如：you@example.com 或 +1 555-123-4567）"></div>
+<button type="submit" class="btn btn-primary form-submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提交请求</font></font><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+<p class="form-note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提交此表单即表示您同意由 RFIDTech Solutions 就您的咨询与您联系。我们尊重您的隐私，不会将您的信息分享给第三方。</font></font></p>
+</form>
 </div>
 </div>
 </div>
@@ -919,15 +916,29 @@ a.classList.toggle('active',a.getAttribute('href').substring(1)===cid);
 });
 },{passive:true});
 
-/* Form validation */
+/* Form validation & mailto submit */
 document.addEventListener('submit',function(e){
 var form=e.target.closest('.contact-form');
 if(!form)return;
+e.preventDefault();
 var valid=true;
 form.querySelectorAll('[required]').forEach(function(f){
 if(!f.value.trim()){valid=false;f.style.borderColor='#e0383c'}else{f.style.borderColor=''}
 });
-if(!valid){e.preventDefault();alert('Please fill in all required fields.')}
+if(!valid){alert('请填写所有必填字段。');return}
+var req=form.querySelector('#requirement').value.trim();
+var company=form.querySelector('#company').value.trim();
+var country=form.querySelector('#country').value;
+var contact=form.querySelector('#contact-info').value.trim();
+var subject=encodeURIComponent('RFID产品咨询 - '+company);
+var body=encodeURIComponent(
+'您好，我想了解贵公司的RFID解决方案。\n\n'+
+'【项目需求】\n'+req+'\n\n'+
+'【公司信息】\n公司名称：'+company+'\n'+
+'国家/地区：'+(country||'未选择')+'\n'+
+'联系方式：'+contact+'\n'
+);
+window.location.href='mailto:mars@br-support.com.cn?subject='+subject+'&body='+body;
 });
 
 /* Keyboard shortcut */
